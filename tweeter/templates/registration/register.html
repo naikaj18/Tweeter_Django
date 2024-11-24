@@ -1,0 +1,10 @@
+{%extends "layout.html"%}
+
+{% block content%}
+<h2 class=" mb-4 mt-4"> New user registration </h2>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-primary">Register</button>
+</form>
+{%endblock%}
